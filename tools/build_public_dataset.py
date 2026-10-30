@@ -1,5 +1,6 @@
 from __future__ import annotations
-import argparse, json, re, zipfile
+import argparse, hashlib, json, re, zipfile
+from datetime import datetime, timezone
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -126,6 +127,12 @@ def main() -> None:
     parser.add_argument("--workbook", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
+    workbook_name = args.workbook.name
+    date_match = re.search(r"(20\d{6})", workbook_name)
+    if not date_match:
+        raise ValueError("Workbook filename must include its YYYYMMDD reconciliation date")
+    reconciled = datetime.strptime(date_match.group(1), "%Y%m%d").date().isoformat()
+    workbook_hash = hashlib.sha256(args.workbook.read_bytes()).hexdigest()
     rows = read_test_cases(args.workbook)
     cases = [public_case(row) for row in rows]
     cases.sort(key=lambda item: int(item["number"]))
@@ -135,8 +142,9 @@ def main() -> None:
     payload = {
         "schemaVersion": 1,
         "project": "Enderman 100 TC",
-        "sourceWorkbook": "Enderman-QA-100-latest-20261030.xlsx",
-        "lastReconciled": "2026-10-30",
+        "sourceWorkbook": workbook_name,
+        "sourceWorkbookSha256": workbook_hash,
+        "lastReconciled": reconciled,
         "totalCases": len(cases),
         "dispatchedAtLeastOnce": sum(1 for item in cases if item["dispatched"]),
         "counts": counts,
@@ -146,7 +154,7 @@ def main() -> None:
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({"totalCases": len(cases), "dispatchedAtLeastOnce": payload["dispatchedAtLeastOnce"], "counts": counts}, ensure_ascii=False))
+    print(json.dumps({"totalCases": len(cases), "dispatchedAtLeastOnce": payload["dispatchedAtLeastOnce"], "sourceWorkbook": workbook_name, "sourceWorkbookSha256": workbook_hash, "lastReconciled": reconciled, "counts": counts}, ensure_ascii=True))
 
 if __name__ == "__main__":
     main()
