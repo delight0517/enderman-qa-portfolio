@@ -88,7 +88,8 @@ def public_case(row: dict[str, str]) -> dict[str, object]:
     limitation = row.get("Limitation", "").strip()
     coverage_text = coverage.split(":", 1)[-1].strip() if ":" in coverage else coverage
     # Never export source paths, UUIDs, account identifiers, journal IDs or raw log content.
-    fields = [title, actions, expected, criteria, limitation, coverage_text]
+    preconditions = row.get("Preconditions", "").strip()
+    fields = [title, actions, expected, criteria, limitation, coverage_text, preconditions]
     for item in fields:
         if re.search(r"(?i)([A-Z]:\\|[0-9a-f]{32,}|@|bearer\s|token\s*=)", item):
             raise ValueError("Private identifier/path detected in a public text field")
@@ -101,7 +102,7 @@ def public_case(row: dict[str, str]) -> dict[str, object]:
         "verdict": verdict,
         "status": state,
         "dispatched": verdict != "NotRun",
-        "preconditions": row.get("Preconditions", "").strip(),
+        "preconditions": preconditions,
         "expectedActions": actions,
         "expectedObservation": expected,
         "passCriteria": criteria,
@@ -109,7 +110,12 @@ def public_case(row: dict[str, str]) -> dict[str, object]:
         "coverage": coverage_text,
         "coverageLevel": "full" if state == "기록 범위 Pass" else ("none" if state == "미실행" else "partial"),
         "attempts": int(float(attempts)) if attempts else 0,
-        "repeatability": row.get("Repeatability", "").strip(),
+        "repeatability": {
+            "confirmed-repeatable-same-signature": "같은 결과로 재현됨",
+            "not-needed": "재현 테스트 불필요",
+            "repeatable-inconclusive-evidence-not-a-product-reproduction": "미확정 결과가 반복됨",
+            "not-confirmed-signatures-diverged-or-incomplete": "결과가 일치하지 않거나 증거가 부족함",
+        }.get(row.get("Repeatability", "").strip(), "반복성 판정 자료 없음"),
         "limitation": limitation,
         "visualEvidence": False,
     }

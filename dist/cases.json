@@ -30,7 +30,7 @@
       "coverage": "controlled server-side bare-hand Player.attack with target AI disabled; terminal player cause and matching synthetic attacker are required; natural Enderman AI/client behavior excluded",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -50,7 +50,7 @@
       "coverage": "exact wooden-sword damage threshold",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -70,7 +70,7 @@
       "coverage": "wooden and stone sword health deltas measured on two independently spawned Endermen",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -90,7 +90,7 @@
       "coverage": "one iron-sword kill trial; anomalies repeat twice for confirmation",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -110,7 +110,7 @@
       "coverage": "exact diamond-sword damage threshold",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -130,7 +130,7 @@
       "coverage": "exact netherite-sword damage threshold",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -150,7 +150,7 @@
       "coverage": "one axe kill; full input movement is separate",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -170,7 +170,7 @@
       "coverage": "grounded vs critical preconditions; does not test client jump input",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -190,7 +190,7 @@
       "coverage": "grounded vs critical preconditions; does not test client jump input",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -210,7 +210,7 @@
       "coverage": "records initial, immediate duplicate and post-wait Player.attack application counts; does not model client click or attack-cooldown UI",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -230,7 +230,7 @@
       "coverage": "server-side sprint flag comparison; knockback/client movement is not asserted",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -250,7 +250,7 @@
       "coverage": "three managed water-contact trials followed by one vanilla server attack on the same Enderman UUID; exact one-hit result is repeated, but duplicate-damage event counts and client reach are not asserted",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -270,7 +270,7 @@
       "coverage": "one iron-sword hit followed by a controlled same-thread safe-pad relocation; exact single-hit HP delta and relocation are checked, autonomous teleport AI/client timing are not",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -290,7 +290,7 @@
       "coverage": "client position/attack",
       "coverageLevel": "none",
       "attempts": 1,
-      "repeatability": "",
+      "repeatability": "반복성 판정 자료 없음",
       "limitation": "Required runtime actions/oracle are not implemented in the current Java adapter; no Minecraft test was dispatched.",
       "visualEvidence": false
     },
@@ -310,7 +310,7 @@
       "coverage": "two distinct synthetic test-player UUIDs attack the same entity sequentially; human timing/network race is not modeled",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -330,7 +330,7 @@
       "coverage": "server-side offhand shield comparison",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -350,7 +350,7 @@
       "coverage": "server-side crouch-state comparison; no client crouch input",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -370,7 +370,7 @@
       "coverage": "verifies server-side hurt-immunity suppression and recovery across immediate repeated hits; blocked input and out-of-reach misses are not simulated",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -390,7 +390,7 @@
       "coverage": "bounded melee kill and final damage cause are recorded; attacker UUID cross-check is not an assertion",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -410,7 +410,7 @@
       "coverage": "lethal server attack plus five-second terminal-state observation",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -430,7 +430,7 @@
       "coverage": "fixed Sharpness I profile versus unenchanted control",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -450,7 +450,7 @@
       "coverage": "fixed Smite I profile versus control on Enderman",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -470,7 +470,7 @@
       "coverage": "fixed Bane I profile versus control on Enderman",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -490,7 +490,7 @@
       "coverage": "one server hit and fire-tick telemetry; later burn/death timing is not asserted",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -510,7 +510,7 @@
       "coverage": "three paired vanilla iron-sword kills with verified Looting I profile and UUID-diff item/XP observations; too few trials to infer a probabilistic Looting drop-rate effect",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -530,7 +530,7 @@
       "coverage": "lethal attack with Knockback I; displacement is not asserted",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -550,7 +550,7 @@
       "coverage": "one actual vanilla server Player.attack with verified Sweeping Edge I; one eligible Enderman neighbor must receive one event and one out-of-range control none; client input and natural Enderman behavior excluded",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -570,7 +570,7 @@
       "coverage": "fixed Strength I profile versus control",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -590,7 +590,7 @@
       "coverage": "fixed Weakness I profile versus control",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -610,7 +610,7 @@
       "coverage": "server-side critical plus Jump Boost fixture; does not test client jump trajectory",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -630,7 +630,7 @@
       "coverage": "Speed I versus control at full attack strength",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -650,7 +650,7 @@
       "coverage": "Absorption I on attacker versus control",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -670,7 +670,7 @@
       "coverage": "fixed Strength I profile and damage delta",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -690,7 +690,7 @@
       "coverage": "server-authoritative death and remaining durability telemetry; break animation/event count is not measured",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -710,7 +710,7 @@
       "coverage": "one harmless vanilla CUSTOM_NAME component on iron sword is read back, then a lethal Player.attack is attributed; arbitrary cursed/custom combat components are not covered",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -730,7 +730,7 @@
       "coverage": "partial server-side modified attack attribute hit; no client command/weapon construction path",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -750,7 +750,7 @@
       "coverage": "server-authoritative death and remaining durability telemetry; break animation/event count is not measured",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -770,7 +770,7 @@
       "coverage": "unrelated offhand item versus empty-hand control",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -790,7 +790,7 @@
       "coverage": "attacker armor fixture versus control",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -810,7 +810,7 @@
       "coverage": "one full-charge trial; anomalies repeat twice for confirmation",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -830,7 +830,7 @@
       "coverage": "records an authoritative vanilla arrow entity-hit and exact target UUID; compares the target's resulting health/alive state",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -850,7 +850,7 @@
       "coverage": "records one vanilla arrow collision UUID/HP; timing immediately before Enderman teleport is not simulated",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -870,7 +870,7 @@
       "coverage": "launches an arrow at the old position and teleports the same managed UUID before projectile ticks; verifies no stale-coordinate hit/HP loss, but does not emulate natural teleport AI or a player bow",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -890,7 +890,7 @@
       "coverage": "records one fixed-speed vanilla arrow collision; full-charge versus partial-charge bow comparison is not simulated",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -910,7 +910,7 @@
       "coverage": "records one unenchanted vanilla arrow collision; Power enchantment bonus comparison is not configured",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -930,7 +930,7 @@
       "coverage": "verifies exact vanilla flaming-arrow collision identity and records HP/fire ticks; does not emulate player Flame bow input",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -950,7 +950,7 @@
       "coverage": "records one vanilla crossbow-arrow collision UUID; Piercing multi-target pass-through is not simulated",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -970,7 +970,7 @@
       "coverage": "requires exact managed-target collision for one bow-backed and one crossbow-backed arrow; does not test Enderman evade AI or player input",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -990,7 +990,7 @@
       "coverage": "one AI-isolated Enderman and one vanilla crossbow-fired small-ball firework rocket; exact collision/damage/death telemetry; player input, custom recipes and blast radius excluded",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1010,7 +1010,7 @@
       "coverage": "records one tracked vanilla thrown-trident impact and exact Enderman UUID; does not emulate player throw input or Loyalty return",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1030,7 +1030,7 @@
       "coverage": "records one vanilla trident collision and exact target UUID; Loyalty return/second-hit behavior is not simulated",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1050,7 +1050,7 @@
       "coverage": "records one vanilla trident collision and health delta; Impaling enchantment comparison is not configured",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1070,7 +1070,7 @@
       "coverage": "vanilla snowball impact callback must name the exact managed Enderman UUID; compare health only after confirmed collision",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1090,7 +1090,7 @@
       "coverage": "vanilla egg impact callback must name the exact managed Enderman UUID; compare health only after confirmed collision",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1110,7 +1110,7 @@
       "coverage": "one fixed zero-inaccuracy vanilla arrow launched after the first managed Enderman has teleported off-lane for a full server tick; exact impact UUID and both targets’ HP/life/damage/movement are recorded. A second Enderman may evade the arrow without taking damage; player bow input and autonomous AI are excluded",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1130,7 +1130,7 @@
       "coverage": "three sequential vanilla arrow impacts are attributed to one exact target UUID; near-simultaneous impact ordering and duplicate health event correlation are not tested",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1150,7 +1150,7 @@
       "coverage": "requires a server-authoritative vanilla arrow block-hit, no Enderman entity-hit, and unchanged health after a restored run-owned obsidian barrier",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1170,7 +1170,7 @@
       "coverage": "records one vanilla arrow impact; no teleport transition or post-teleport second hit is scheduled",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1190,7 +1190,7 @@
       "coverage": "one AI-isolated Enderman mounted in an owned vanilla oak boat; records exact arrow collision UUID and Enderman HP/life state; minecart, other projectiles and client input excluded",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1210,7 +1210,7 @@
       "coverage": "eight vanilla arrows originate from one server-thread fixture; reconciles projectile UUIDs, target damage/death/drop counts and successful vanilla teleport calls during managed-target hit handling. Client bow input and transport latency are not covered; full death/drop-under-latency case remains inconclusive until a client path is exercised",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "repeatable-inconclusive-evidence-not-a-product-reproduction",
+      "repeatability": "미확정 결과가 반복됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1230,7 +1230,7 @@
       "coverage": "high open-sky fixture verifies rain exposure and survival; teleport behavior is not asserted",
       "coverageLevel": "partial",
       "attempts": 2,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1250,7 +1250,7 @@
       "coverage": "verifies actual rain exposure before and no sky/rain exposure after a reversible roof fixture, plus stable HP for two seconds; teleport behavior is not asserted",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1270,7 +1270,7 @@
       "coverage": "verifies rain reaches target and clear-weather transition; shelter collision/post-rain damage curve is not measured",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1290,7 +1290,7 @@
       "coverage": "one water contact, survival and displacement",
       "coverageLevel": "full",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1310,7 +1310,7 @@
       "coverage": "bounded continuous water fixture and terminal state; repeated damage ticks are not counted",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1330,7 +1330,7 @@
       "coverage": "three one-tick water exposures, managed water removal and a two-second authoritative HP/alive comparison; teleport destination and visual behavior are not asserted",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1350,7 +1350,7 @@
       "coverage": "compares one-block and three-block source-water columns for one server tick each with exact fluid readbacks and post-contact HP/alive/position; sustained cadence and teleport counts are not asserted",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1370,7 +1370,7 @@
       "coverage": "compares verified source (amount 8) and flowing (amount 4) water blocks for one tick each on separate Endermen, recording HP/alive/position; sustained cadence is not measured",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1390,7 +1390,7 @@
       "coverage": "one explicit vanilla Enderman teleport attempt targets a verified water-floor destination; records vanilla destination eligibility, method result, movement and damage count. This does not prove all random destinations are blocked or emulate autonomous teleport selection.",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1410,7 +1410,7 @@
       "coverage": "three distinct one-tick water pulses with each HP/life-state snapshot; requires per-contact loss ≤1 HP and total loss ≤3 HP, but does not count teleport events or continuous cadence",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1430,7 +1430,7 @@
       "coverage": "actual vanilla water splash potion exact impact UUID plus health/life/position effect; radius boundaries, client throw input and lingering clouds are not covered",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1450,7 +1450,7 @@
       "coverage": "two vanilla water splash potion landings at fixed 4.5-block outside and 2.5-block inside lateral offsets; per-impact outcome, HP and damage journal; no complete radius sweep",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1470,7 +1470,7 @@
       "coverage": "one actual AreaEffectCloud with water potion contents over a managed Enderman for 20 server seconds; records bounded HP/damage observations; does not assert exit or teleport behavior",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1490,7 +1490,7 @@
       "coverage": "requires an observed drown-damage event during the controlled 1200-tick water-cloud exposure before evaluating exit; matches every later damage tick to server position and cloud horizontal radius. A run without pre-exit damage is Inconclusive; no client visuals or natural teleport-selection coverage",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "repeatable-inconclusive-evidence-not-a-product-reproduction",
+      "repeatability": "미확정 결과가 반복됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1510,7 +1510,7 @@
       "coverage": "exact Harming potion effect and target hit; verifies Enderman's vanilla resistance path (no HP loss); teleport attempts and client throw input are not covered",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1530,7 +1530,7 @@
       "coverage": "actual vanilla Healing splash potion exact target hit and recovery from a verified 6 HP baseline; radius and client throw input are not covered",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1550,7 +1550,7 @@
       "coverage": "water and Harming splash potions launched in one server-thread action; exact same-tick target hits and one water-attributed damage event required; client input and natural teleport probabilities are not covered",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature-over-valid-same-tick-pairs",
+      "repeatability": "반복성 판정 자료 없음",
       "limitation": "Only same-tick exact-hit pairs are comparable; other attempts are retained as inconclusive relocation diagnostics.",
       "visualEvidence": false
     },
@@ -1570,7 +1570,7 @@
       "coverage": "exact Harming potion effect and target hit at verified 6 HP; verifies Enderman remains alive without a death cause/attacker record; teleport attempts and client throw input are not covered",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1590,7 +1590,7 @@
       "coverage": "controlled server-side move out of and observe around a tracked water-cloud footprint; per-server-tick position, horizontal distance and radius inclusion are recorded with damage events. Does not exercise natural Enderman teleport selection or prove potion-effect membership; cloud-radius inclusion is geometric fixture telemetry.",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1610,7 +1610,7 @@
       "coverage": "one vanilla DROWN damage-source pulse at 1 HP plus same-dimension UUID-diff artifact observation; this does not model continuous water contact or autonomous teleport",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1630,7 +1630,7 @@
       "coverage": "accepts observed damage or ≥8-block displacement; exact fluid overlap not independently sampled",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1650,7 +1650,7 @@
       "coverage": "one bounded lava exposure; continuous damage cadence and safe-place escape are not asserted",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1670,7 +1670,7 @@
       "coverage": "verifies lava damage, read-back-verified dry 5x5 enclosure, disabled target AI, restored lava and no post-escape damage event/HP change; not autonomous Enderman teleport AI",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1690,7 +1690,7 @@
       "coverage": "verifies low-health and exact lava fixture readback, then accepts only lava-attributed death or alive displacement ≥8 blocks; server outcome ordering only",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1710,7 +1710,7 @@
       "coverage": "accepts damage or ≥8-block displacement; escape/block-clear behavior not isolated",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1730,7 +1730,7 @@
       "coverage": "observes positive server fire ticks, removes the managed fire fixture, extinguishes the managed entity, then verifies fire ticks are zero",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1750,7 +1750,7 @@
       "coverage": "verifies both fixture blocks and server damage events by source/tick; checks fire+lava co-occurrence and duplicate same-source events, but not client behavior",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1770,7 +1770,7 @@
       "coverage": "accepts damage or ≥8-block displacement; animation not asserted",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1790,7 +1790,7 @@
       "coverage": "one bounded soul-campfire exposure; detailed damage cadence is not measured",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1810,7 +1810,7 @@
       "coverage": "accepts damage or ≥8-block displacement; exact contact ticks not sampled",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1830,7 +1830,7 @@
       "coverage": "accepts damage or ≥8-block displacement; slowdown not sampled",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1850,7 +1850,7 @@
       "coverage": "accepts damage or ≥8-block displacement; contact ticks not sampled",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1870,7 +1870,7 @@
       "coverage": "three equivalent before/after freeze-tick telemetry samples; vanilla damage/death rule remains under review",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "not-confirmed-signatures-diverged-or-incomplete",
+      "repeatability": "결과가 일치하지 않거나 증거가 부족함",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1890,7 +1890,7 @@
       "coverage": "verified packed-ice runway, sealed dry shaft and landing floor; AI/gravity remain enabled; bounded movement/fall damage recorded; other terrain layouts excluded",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1910,7 +1910,7 @@
       "coverage": "one authoritative cactus damage event then block restoration; magma contact and autonomous teleport transition are not tested",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1930,7 +1930,7 @@
       "coverage": "requires positive server fire ticks before one-tick vanilla water contact, then verifies extinguished fire ticks",
       "coverageLevel": "partial",
       "attempts": 1,
-      "repeatability": "not-needed",
+      "repeatability": "재현 테스트 불필요",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1950,7 +1950,7 @@
       "coverage": "one read-back-verified managed lava block and lava damage-source pulse at 1 HP plus UUID-diff artifact observation; carried-block preservation and visuals are not observed",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1970,7 +1970,7 @@
       "coverage": "three repeated lethal vanilla inFire-source hits with a pre/post same-dimension item/XP UUID diff; all three yielded XP=0 and no new items; this does not assess the probabilistic ender-pearl drop distribution, natural fire ticks/teleport timing or visual death animation",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -1990,7 +1990,7 @@
       "coverage": "one same-thread inFire damage event followed by one vanilla player attack; checks same-tick source ordering and terminal attacker attribution, not natural scheduling/network race",
       "coverageLevel": "partial",
       "attempts": 3,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     },
@@ -2010,7 +2010,7 @@
       "coverage": "ten one-second equivalent powder-snow observations with per-attempt managed fixture reset; repeatable telemetry is reported separately from the vanilla freeze rule",
       "coverageLevel": "partial",
       "attempts": 10,
-      "repeatability": "confirmed-repeatable-same-signature",
+      "repeatability": "같은 결과로 재현됨",
       "limitation": "This dedicated-server adapter cannot capture rendered Minecraft client pixels.",
       "visualEvidence": false
     }
