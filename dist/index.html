@@ -25,6 +25,16 @@
 <div class="hero-card"><div class="eyebrow">PROJECT SNAPSHOT</div><div class="big">100 <span style="font-size:1.3rem;color:var(--blue)">TC</span></div><p>계획된 케이스 · 최소 한 번 실행 <span id="dispatched">—</span><br>체크포인트: <time id="reconciled">불러오는 중</time><br><small id="source-label">QA 상태 체크포인트</small></p></div>
 </section>
 <div class="notice"><strong>진행 상태와 증거 범위:</strong> QA는 아직 완료되지 않았습니다. 99/100건이 최소 한 번 시도됐지만, 전체 클라이언트 게임플레이 검증을 뜻하지 않습니다. 화면 캡처와 영상은 현재 없습니다.</div>
+
+<section aria-labelledby="portfolio-title">
+<div class="section-head"><div><h2 id="portfolio-title">프로젝트 포트폴리오</h2><p>목표, 접근 방식, 결과와 남은 검증 범위를 요약합니다.</p></div></div>
+<div class="method">
+<article><h3>프로젝트 소개</h3><p><strong>주제:</strong> Minecraft Java의 엔더맨 피해·이동·사망 동작을 100개 질문으로 쪼개 검증하는 게임 QA 사례입니다.<br><strong>목표:</strong> 막연한 게임플레이 기대를 사전 조건·행동·기대 관측·통과 기준이 있는 테스트로 바꾸고, 어떤 범위까지 확인했는지 근거와 함께 공개합니다.<br><strong>작업 범위:</strong> 케이스 설계와 판정 기준 정리, 서버 측 테스트 실행·기록, 완전/부분/미확정/미실행 분류, 후속 검증 우선순위 도출, 민감한 원본 증거를 제외한 공개용 포트폴리오 구성.</p></article>
+<article><h3>QA 접근 방식</h3><ul><li>100개 케이스에 사전 조건, 예상 행동, 기대 관측과 통과 기준을 정의.</li><li>프로젝트 실행 기록을 케이스별 최신 상태로 모아 완전·부분·미확정·미실행으로 구분.</li><li>부분 관측으로 게임 전체 동작을 단정하지 않고, 케이스마다 확인 범위와 제한을 공개.</li><li>민감한 실행 저널과 머신 식별 정보는 공개 데이터에서 제외.</li></ul></article>
+<article><h3>현재 결과</h3><ul><li><strong>18건:</strong> 정의된 기록 범위에서 Pass.</li><li><strong>78건:</strong> 제한된 서버 측 범위에서 부분 Pass; 클라이언트 행동 전체를 보증하지 않음.</li><li><strong>3건:</strong> 미확정; 추가 조건 또는 증거가 필요함.</li><li><strong>1건:</strong> 미실행; 전체 QA 완료가 아님.</li><li><strong>0건:</strong> 현재 체크포인트에 확인 완료로 등록된 결함.</li></ul><p style="margin-top:10px"><strong>핵심:</strong> 99건 시도는 99건 전체 통과와 같은 뜻이 아닙니다.</p></article>
+<article><h3>증거와 다음 단계</h3><p>결과는 앱의 케이스별 QA 체크포인트와 서버 측 실행 기록을 집계한 상태입니다. 실제 Minecraft 화면 캡처·영상이 없어 시각적 동작과 클라이언트 입력은 확인하지 못했습니다. 다음 단계는 미확정·미실행 케이스의 조건을 보완하고, 허용된 격리 환경에서 클라이언트 관측과 미디어 증거를 확보한 뒤 판정을 갱신하는 것입니다. 이 공개 페이지는 로컬 앱과 자동 동기화되지 않습니다.</p></article>
+</div>
+</section>
 <section class="metrics" aria-label="최신 결과 요약">
 <div class="metric full"><strong id="count-full">18</strong><span>기록 범위 Pass</span></div>
 <div class="metric partial"><strong id="count-partial">78</strong><span>부분 범위 Pass</span></div>
@@ -43,19 +53,11 @@
 </div>
 <div id="case-grid" class="grid" aria-live="polite"></div>
 </section>
-<section aria-labelledby="portfolio-title">
-<div class="section-head"><div><h2 id="portfolio-title">프로젝트 포트폴리오</h2><p>목표, 접근 방식, 결과와 남은 검증 범위를 요약합니다.</p></div></div>
-<div class="method">
-<article><h3>프로젝트 소개</h3><p><strong>주제:</strong> Minecraft Java에서 엔더맨이 피해를 받고 죽는 조건을 체계적으로 확인합니다.<br><strong>목표:</strong> 모호한 게임플레이 질문을 재현 가능한 테스트 케이스와 명확한 통과 기준으로 바꾸고, 결과를 추적 가능한 포트폴리오로 정리합니다.<br><strong>담당 관점:</strong> 테스트 범위와 판정 기준 정리, 실행 결과 분류, 증거 한계 공개, 후속 검증 우선순위 도출.</p></article>
-<article><h3>QA 접근 방식</h3><ul><li>100개 케이스에 사전 조건, 예상 행동, 기대 관측과 통과 기준을 정의.</li><li>프로젝트 실행 기록을 케이스별 최신 상태로 모아 완전·부분·미확정·미실행으로 구분.</li><li>부분 관측으로 게임 전체 동작을 단정하지 않고, 케이스마다 확인 범위와 제한을 공개.</li><li>민감한 실행 저널과 머신 식별 정보는 공개 데이터에서 제외.</li></ul></article>
-<article><h3>현재 결과</h3><ul><li><strong>18건:</strong> 정의된 기록 범위에서 Pass.</li><li><strong>78건:</strong> 제한된 서버 측 범위에서 부분 Pass; 클라이언트 행동 전체를 보증하지 않음.</li><li><strong>3건:</strong> 미확정; 추가 조건 또는 증거가 필요함.</li><li><strong>1건:</strong> 미실행; 전체 QA 완료가 아님.</li><li><strong>0건:</strong> 현재 체크포인트에 확인 완료로 등록된 결함.</li></ul><p style="margin-top:10px"><strong>핵심:</strong> 99건 시도는 99건 전체 통과와 같은 뜻이 아닙니다.</p></article>
-<article><h3>증거와 다음 단계</h3><p>결과는 앱의 케이스별 QA 체크포인트와 서버 측 실행 기록을 집계한 상태입니다. 실제 Minecraft 화면 캡처·영상이 없어 시각적 동작과 클라이언트 입력은 확인하지 못했습니다. 다음 단계는 미확정·미실행 케이스의 조건을 보완하고, 허용된 격리 환경에서 클라이언트 관측과 미디어 증거를 확보한 뒤 판정을 갱신하는 것입니다. 이 공개 페이지는 로컬 앱과 자동 동기화되지 않습니다.</p></article>
-</div>
-</section>
+
 <section aria-labelledby="about-title">
 <div class="section-head"><div><h2 id="about-title">이 테스트와 도구는 무엇인가요?</h2><p>반복 가능한 게임 QA를 위한 작업 흐름을 기록합니다.</p></div></div>
 <div class="method">
-<article><h3>Enderman QA Workbench</h3><p>프로젝트별 테스트 계획, 실행 기록, 케이스별 상태와 결과를 모아 보는 Windows 데스크톱 QA 도구입니다. 이번 스냅샷은 Minecraft Java 26.3의 앱 소유 격리 서버와 Java 어댑터를 사용한 서버 측 관측 기록을 반영합니다. 케이스별 결과는 이 페이지에서 바로 검색·분류할 수 있습니다.</p></article>
+<article><h3>사용한 도구와 공개 범위</h3><p>Enderman QA Workbench는 프로젝트별 계획·실행·증거를 정리하는 Windows 데스크톱 QA 도구입니다. 이번 결과는 Minecraft Java 26.3의 격리 서버와 Java 어댑터를 사용한 서버 측 관측입니다. 공개 페이지는 정제된 정적 데이터만 제공하며 자동 동기화되지 않습니다. 공식 앱 소스와 배포 라이선스가 확인되지 않아 Workbench 자체는 오픈소스로 배포하지 않았습니다.</p></article>
 <article><h3>결과 읽는 법</h3><ul><li><strong>기록 범위 Pass 18건</strong>: 케이스에 명시된 어댑터 검증 범위에서 통과.</li><li><strong>부분 범위 Pass 78건</strong>: 서버에서 확인한 한정된 부분만 통과. 클라이언트 입력·화면·네트워크 등은 빠질 수 있음.</li><li><strong>미확정 3건</strong>: #60, #74, #79. 증거나 조건이 부족해 결론을 내리지 않음.</li><li><strong>미실행 1건</strong>: #14. 실제 클라이언트 동작 경로가 없어 실행하지 않음.</li></ul></article>
 <article><h3>재현과 근거</h3><p>불일치는 같은 테스트 월드에서 다시 확인하고, 실행 데이터와 판정 근거를 프로젝트에 보관합니다. 현재 공개판에는 원본 실행 저널이나 내부 식별자를 싣지 않았습니다. 실제 게임 화면 캡처와 영상은 아직 확보되지 않았습니다.</p></article>
 <article><h3>현재 한계와 다음 단계</h3><p>가상 화면 격리와 클라이언트 캡처 연결이 검증되지 않아 결과가 전용 서버 관측에 한정된 케이스가 있습니다. 다음은 안전한 격리 환경의 클라이언트 증거 경로를 연결하고, #14 및 미확정 케이스의 빠진 조건을 보완하는 것입니다. 현재 체크포인트에 확인 완료로 등록된 결함은 0건입니다.</p></article>
