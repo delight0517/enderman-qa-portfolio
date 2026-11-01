@@ -153,7 +153,8 @@ def main() -> None:
         "cases": cases,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    # Keep generated snapshots byte-stable across Windows and Unix checkouts.
+    args.output.write_bytes((json.dumps(payload, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
     print(json.dumps({"totalCases": len(cases), "dispatchedAtLeastOnce": payload["dispatchedAtLeastOnce"], "sourceWorkbook": workbook_name, "sourceWorkbookSha256": workbook_hash, "lastReconciled": reconciled, "counts": counts}, ensure_ascii=True))
 
 if __name__ == "__main__":
