@@ -25,6 +25,10 @@ The portfolio source and builder authored in this repository are licensed under 
 
 For hiring review, start with the public case study, then inspect the dataset builder and privacy allowlist. The live page is linked from the repository's GitHub description when available.
 
-## Data source`n`nThe current static snapshot was generated from the dated workbook named in `dist/cases.json`; only its SHA-256 and reconciliation date are published. The workbook itself is private project data and is not included.`n`n## Build
+## Data source
+
+The current static snapshot was generated from the dated workbook named in dist/cases.json; only its SHA-256 and reconciliation date are published. The workbook itself is private project data and is not included.
+
+## Build
 
 Run `python tools/build_public_dataset.py --workbook <latest-workbook-YYYYMMDD.xlsx> --output dist/cases.json` from this folder. The output is static JSON; no backend, credentials or browser storage are needed. The workbook filename must contain its reconciliation date as `YYYYMMDD`.
