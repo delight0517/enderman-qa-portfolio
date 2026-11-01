@@ -25,6 +25,10 @@ The portfolio source and builder authored in this repository are licensed under 
 
 For hiring review, start with the public case study, then inspect the dataset builder and privacy allowlist. The live page is linked from the repository's GitHub description when available.
 
+## Windows viewer preview
+
+The separately branded **Enderman QA Portfolio Viewer** provides an offline Windows x64 case browser. It is not the original Workbench app and does not touch the Workbench install or Minecraft. Download the self-contained preview from [GitHub Releases](https://github.com/delight0517/enderman-qa-portfolio/releases). The bundled QA snapshot is still incomplete; see the case-by-case coverage and limitations above.
+
 ## Data source
 
 The current static snapshot was generated from the dated workbook named in dist/cases.json; only its SHA-256 and reconciliation date are published. The workbook itself is private project data and is not included.
